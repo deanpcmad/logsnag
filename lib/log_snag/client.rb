@@ -19,7 +19,7 @@ module LogSnag
 
     def connection
       @connection ||= Faraday.new(BASE_URL) do |conn|
-        conn.request :authorization, :basic, token
+        conn.headers["Authorization"] = "Bearer #{token}"
         conn.request :json
         conn.response :json
         conn.adapter adapter, @stubs

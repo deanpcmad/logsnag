@@ -16,6 +16,7 @@ GEM
     ruby2_keywords (0.0.5)
 
 PLATFORMS
+  arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
