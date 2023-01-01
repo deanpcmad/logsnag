@@ -26,6 +26,12 @@ Firstly you'll need to set an API Token.
 @logsnag.log(project: "my-project", channel: "channel", event: "my-event")
 ```
 
+### Sending an Insight
+
+```ruby
+@logsnag.insight(project: "my-project", title: "Title of Insight", value: "the-value")
+```
+
 Available Options:
 
 - description
